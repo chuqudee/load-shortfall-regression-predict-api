@@ -60,7 +60,7 @@ def _preprocess_data(data):
     # ----------- Replace this code with your own preprocessing steps --------
     
     # create new features
-    feature_vector_df['Year']  = feature_vector_dff['time'].astype('datetime64').dt.year
+    feature_vector_df['Year']  = feature_vector_df['time'].astype('datetime64').dt.year
     feature_vector_df['Month_of_year']  = feature_vector_df['time'].astype('datetime64').dt.month
     feature_vector_df['Week_of_year'] = feature_vector_df['time'].astype('datetime64').dt.weekofyear
     feature_vector_df['Day_of_year']  = feature_vector_df['time'].astype('datetime64').dt.dayofyear
